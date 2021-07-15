@@ -13,6 +13,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "samiktuteja2008@gmail.com",
+    Password: "mriiklvjpdwksxiw",
+    To: username.value,
+    From: "samiktuteja2008@gmail.com",
+    Subject: "Selicoin Password Change",
+    Body: "Your password is exunclan",
+  });
+  alert("Please check your email");
+}
+
 document.querySelector("form").addEventListener("submit", function (event) {
   passwordError.textContent = "";
   usernameError.textContent = "";
@@ -22,5 +35,8 @@ document.querySelector("form").addEventListener("submit", function (event) {
   } else if (password.value.trim() === "") {
     passwordError.textContent = "Please fill the password";
     event.preventDefault();
+  } else if (password.value !== "exunclan") {
+    event.preventDefault();
+    passwordError.textContent = "Wrong Password!";
   }
 });

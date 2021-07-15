@@ -13,19 +13,18 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="./about.html">About</a>
-            <a href="./bank.html">Bank</a>
             <a id="page-id" href="./signup.html">Login</a>
         </nav>
     </div>
         <div class="contain-container">
             <div class="container">
 
-    <h1 class="main-h1">Selicoin</h1>
+    <h1 class="main-h1"><img style="width: 20rem; height: 7rem;" src="../images/Group_3.png" alt=""></h1>
     <h2 class="main-h1-second">Welcome!</h2>
-    <form action="./bank.html">
+    <form method="POST" action="./successful.html">
         <div class="username-div">
         <i class="fa fa-user"></i>
-        <input class="username" type="text" value="" placeholder="Username or Email">
+        <input class="username" type="email" value="" placeholder="Email">
     </div>
 
         <span class="username-error"></span>
@@ -37,12 +36,14 @@
 
         <span class="password-error"></span>
         <div class="form-end">
-            <p class="pwd-forgot">Forgot Password?</p>
+            <a class="forgot-password" onclick="sendEmail()" href="">Forgot Password?</a>
+            <!-- <input type="button" value="Send Email" onclick="sendEmail()"/>             -->
             <input class="submit-btn" type="submit" value="Log In">    
         </div>
     </form>
     <p>Dont have an account? <a class="signup-btn" href="./signup.html">Sign Up</a></p>
     <script src="../js/login.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
 </div>
 </div>
 
