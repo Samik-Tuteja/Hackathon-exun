@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: -1px;
+  padding: 1.5rem;
+}
+.scroll {
+  background-color: #333;
+  color: whitesmoke;
+}
+.scroll nav a {
+  color: whitesmoke;
+}
+nav {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+nav a {
+  padding: 0 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+}
+#page-id {
+  padding: 0.5rem 0.5rem;
+  background-color: #ffd300;
+  border-radius: 5px;
+}
+.contain-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.container {
+  width: 35%;
+  border: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-h1 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+.main-h1-second {
+  text-align: center;
+  margin-top: 0;
+}
+form {
+  margin: 1rem;
+}
+.pass,
+.username,
+.reset-pass {
+  height: 2rem;
+  width: 18rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #c9bd95;
+  opacity: 40%;
+}
+.pass::placeholder,
+.username::placeholder,
+.reset-pass::placeholder {
+  color: #333;
+}
+
+i {
+  background-color: #c9bd95;
+  opacity: 40%;
+  padding: 0.5rem;
+}
+.password-error,
+.username-error,
+.reset-password-error {
+  color: red;
+  font-size: 1rem;
+}
+
+.username-div,
+.password-div,
+.reset-password-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.reset-password-div {
+  margin-top: 1rem;
+}
+
+.form-end {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pwd-forgot {
+  text-align: center;
+  cursor: pointer;
+}
+
+.submit-btn {
+  align-self: center;
+  padding: 0.4rem 4rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.submit-btn:hover {
+  background-color: #ffd300;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  text-decoration: none;
+}
