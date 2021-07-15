@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign up | SeliCoin</title>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./bank.html">Bank</a>
+            <a id="page-id" href="./login.html">Sign Up</a>
+        </nav>
+    </div>
+        <div class="contain-container">
+            <div class="container">
+
+    <h1 class="main-h1">Selicoin</h1>
+    <h2 class="main-h1-second">Welcome!</h2>
+    <form action="./bank.html">
+        <!-- username starts -->
+        <div class="username-div">
+        <i class="fa fa-user"></i>
+        <input class="username" type="text" value="" placeholder="Username or Email">
+    </div>
+
+        <span class="username-error"></span>
+        <br>
+
+        <!-- username finishes -->
+        <!-- pass starts -->
+        <div class="password-div">
+        <i class="fa fa-lock"></i>
+        <input type="password" name="pass" class="pass" value="" placeholder="Password">
+    </div>
+    <span class="password-error"></span>
+    <!-- pass finishes -->
+    <!-- reset-pass starts -->
+
+    <div class="reset-password-div">
+        <i class="fa fa-lock"></i>
+        <input type="password" name="pass" class="reset-pass" value="" placeholder="Confirm Password">
+    </div>
+        <span class="reset-password-error"></span>
+        <!-- pass finishes -->
+        <div class="form-end">
+            <p class="pwd-forgot">Forgot Password?</p>
+            <input class="submit-btn" type="submit" value="Log In">    
+        </div>
+    </form>
+    <p>Already have an account? <a class="signup-btn" href="./login.html">Log In</a></p>
+    <script src="../js/signup.js"></script>
+</div>
+</div>
+
+
+</body>
+</html>
