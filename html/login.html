@@ -21,7 +21,7 @@
 
     <h1 class="main-h1"><img style="width: 20rem; height: 7rem;" src="../images/Group_3.png" alt=""></h1>
     <h2 class="main-h1-second">Welcome!</h2>
-    <form method="POST" action="./successful.html">
+    <form action="../html/successful.html">
         <div class="username-div">
         <i class="fa fa-user"></i>
         <input class="username" type="email" value="" placeholder="Email">
@@ -31,7 +31,8 @@
         <br>
         <div class="password-div">
         <i class="fa fa-lock"></i>
-        <input type="password" name="pass" class="pass" value="" placeholder="Password">
+        <input id="pwd-op" type="password" name="pass" class="pass" value="" placeholder="Password">
+        <i style="cursor: pointer;" onclick="showPass()" class="fa fa-eye-slash"></i>
     </div>
 
         <span class="password-error"></span>

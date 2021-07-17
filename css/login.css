@@ -74,8 +74,6 @@ form {
 .username {
   height: 2rem;
   width: 18rem;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   border: none;
   outline: none;
   background-color: #c9bd95;
@@ -144,4 +142,8 @@ i {
 
 .forgot-password:hover {
   text-decoration: underline;
+}
+
+#pwd-op {
+  width: 16.2rem;
 }

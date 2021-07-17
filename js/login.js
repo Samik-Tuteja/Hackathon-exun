@@ -3,6 +3,8 @@ const username = document.querySelector(".username");
 const password = document.querySelector(".pass");
 const usernameError = document.querySelector(".username-error");
 const passwordError = document.querySelector(".password-error");
+const eyeBtn = document.querySelector(".fa-eye-slash");
+var passShow = 0;
 
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;
@@ -13,6 +15,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
+function showPass() {
+  passShow++;
+  if (passShow % 2 === 0) {
+    password.type = "password";
+    eyeBtn.classList = "fa fa-eye-slash";
+  } else {
+    password.type = "text";
+    eyeBtn.classList = "fa fa-eye";
+  }
+}
 function sendEmail() {
   Email.send({
     Host: "smtp.gmail.com",
