@@ -11,9 +11,9 @@
 <body>
     <div class="navbar">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a id="page-id" href="./login.html">Sign Up</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a id="page-id" href="/login">Sign Up</a>
         </nav>
     </div>
         <div class="contain-container">
@@ -21,15 +21,24 @@
 
     <h1 class="main-h1"><img style="width: 20rem; height: 7rem;" src="../images/Group_3.png" alt=""></h1>
     <h2 class="main-h1-second">Welcome!</h2>
-    <form action="./index.html">
+    <form method="POST">
         <!-- username starts -->
         <div class="username-div">
-        <i class="fa fa-user"></i>
-        <input class="username" type="text" value="" placeholder="Username or Email">
+        <i clas class="fa fa-user"></i>
+        <input name="username" class="username" type="text" value="" placeholder="Username">
     </div>
 
         <span class="username-error"></span>
         <br>
+
+        <div class="username-div">
+            <i class="fa fa-envelope"></i>
+            <input name="email" class="emailOp" type="email" value="" placeholder="Email">
+        </div>
+    
+            <span class="email-error"></span>
+            <br>
+    
 
         <!-- username finishes -->
         <!-- pass starts -->
@@ -43,16 +52,15 @@
 
     <div class="reset-password-div">
         <i class="fa fa-lock"></i>
-        <input type="password" name="pass" class="reset-pass" value="" placeholder="Confirm Password">
+        <input type="password" name="confirmPass" class="reset-pass" value="" placeholder="Confirm Password">
     </div>
         <span class="reset-password-error"></span>
         <!-- pass finishes -->
         <div class="form-end">
-            <p class="pwd-forgot">Forgot Password?</p>
-            <input class="submit-btn" type="submit" value="Log In">    
+            <input style="margin: 1rem;" class="submit-btn" type="submit" value="Log In">    
         </div>
     </form>
-    <p>Already have an account? <a class="signup-btn" href="./login.html">Log In</a></p>
+    <p>Already have an account? <a class="signup-btn" href="/login">Log In</a></p>
     <script src="../js/signup.js"></script>
 </div>
 </div>

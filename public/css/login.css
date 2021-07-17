@@ -71,20 +71,19 @@ form {
   margin: 1rem;
 }
 .pass,
-.username,
-.reset-pass {
+.username {
   height: 2rem;
   width: 18rem;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   border: none;
   outline: none;
   background-color: #c9bd95;
   opacity: 40%;
 }
+.pass {
+  width: 16.2rem;
+}
 .pass::placeholder,
-.username::placeholder,
-.reset-pass::placeholder {
+.username::placeholder {
   color: #333;
 }
 
@@ -94,21 +93,19 @@ i {
   padding: 0.5rem;
 }
 .password-error,
-.username-error,
-.reset-password-error {
+.username-error {
   color: red;
   font-size: 1rem;
 }
 
 .username-div,
-.password-div,
-.reset-password-div {
+.password-div {
   display: flex;
   justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
 }
-.reset-password-div {
+.password-div {
   margin-top: 1rem;
 }
 
@@ -137,4 +134,15 @@ i {
 
 .signup-btn:hover {
   text-decoration: none;
+}
+
+.forgot-password {
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
 }

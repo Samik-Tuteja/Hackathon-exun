@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Login | Selicoin</title>
+    
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a id="page-id" href="/login">Login</a>
+        </nav>
+    </div>
+    <div class="contain-container">
+        <div class="container">
+
+            <h1 class="main-h1"><img style="width: 20rem; height: 7rem;" src="../images/Group_3.png" alt=""></h1>
+            <h2 class="main-h1-second">Welcome!</h2>
+            <form method="POST" action="/successful">
+                <div class="username-div">
+                    <i class="fa fa-user"></i>
+                    <input class="username" type="email" value="" placeholder="Email">
+                </div>
+
+                <span class="username-error"></span>
+                <br>
+                <div class="password-div">
+                    <i style="max-height: 2rem;" class="fa fa-lock"></i>
+                    <input type="password" name="pass" class="pass" value="" placeholder="Password">
+                    <i onclick="hiddenPass()" style="max-height: 2rem; cursor: pointer;" class="fa fa-eye-slash" id="togglePassword"></i>
+                    <!-- <button class="showpass-btn" onclick="passClick()">Show Password</button> -->
+                </div>
+
+                <span class="password-error"></span>
+                <div class="form-end">
+                    <a class="forgot-password" onclick="sendEmail()" href="">Forgot Password?</a>
+                    <!-- <input type="button" value="Send Email" onclick="sendEmail()"/>             -->
+                    <input class="submit-btn" type="submit" value="Log In">
+                </div>
+            </form>
+            <p>Dont have an account? <a class="signup-btn" href="/signup">Sign Up</a></p>
+            <script src="../js/login.js"></script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

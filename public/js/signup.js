@@ -5,6 +5,8 @@ const usernameError = document.querySelector(".username-error");
 const passwordError = document.querySelector(".password-error");
 const resetPass = document.querySelector(".reset-pass");
 const resetPassError = document.querySelector(".reset-password-error");
+const mailError = document.querySelector(".email-error");
+const mail = document.querySelector(".emailOp");
 
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;
@@ -21,6 +23,7 @@ document
     passwordError.textContent = "";
     usernameError.textContent = "";
     resetPassError.textContent = "";
+    mailError.textContent = "";
     if (username.value.trim() === "") {
       usernameError.textContent = "Please fill the username";
       event.preventDefault();
@@ -33,7 +36,8 @@ document
     } else if (resetPass.value !== password.value) {
       resetPassError.textContent = "Passwords do not maatch";
       event.preventDefault();
-    } else {
-      location = bank.html;
+    } else if (mail.value.trim() === "") {
+      mailError.textContent = "Please enter a valid email";
+      event.preventDefault();
     }
   });
